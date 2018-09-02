@@ -10,7 +10,7 @@
 <!-- @service, @Repository, @controller, @component -->
 <!--  service 랑 dao 만 하고싶을때 use-default-filters-->
 <context:annotation-config/>
-<context:component-scan base-package="board" use-default-filters="false">
+<context:component-scan base-package="cvs" use-default-filters="false">
 	<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 	<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
 </context:component-scan> 

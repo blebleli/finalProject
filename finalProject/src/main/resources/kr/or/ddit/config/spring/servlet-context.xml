@@ -51,9 +51,7 @@
 
 	<!-- view resolver -->
 	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		
-		
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">	
 		<property name="order" value="2" />
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
@@ -63,18 +61,22 @@
 	<!-- jason view -->
 	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
 
+	<!-- qrcode reader -->
+	<bean id="qrCodeReader" class="cvs.QRCodeReader" />
 
 	<!-- excelDownload view -->
 	<!--<bean id="excelDownloadView" class="kr.or.ddit.mvc.view.ExcelDownloadView" />-->
-	<!-- fileDownloadView view -->
-	<!-- <bean id="fileDownloadView" class="board.boardFile.web.FileDownloadView" /> -->
 
+ 	<!-- fileDownload view -->
+	<!--<bean id="fileDownloadView" class="board.boardFile.web.FileDownloadView" />-->
+	
+	
+	
 	<!-- muliPart -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="10000000" />
 		<property name="maxInMemorySize" value="10000000" />
-
 	</bean>
 
 	<!-- message -->

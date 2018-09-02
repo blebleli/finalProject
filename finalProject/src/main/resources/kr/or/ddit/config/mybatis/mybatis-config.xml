@@ -4,8 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<properties resource="kr/or/ddit/config/mybatis/db.properties"></properties>
-
-<!-- 	<typeAliases>
+<!-- 
+	<typeAliases>
 		<typeAlias type="board.student.model.StudentVo" alias="stdVo"/>
 		<typeAlias type="board.board.model.BoardVo" alias="boardVo"/>
 		<typeAlias type="board.write.model.WriteVo" alias="writeVo"/>
